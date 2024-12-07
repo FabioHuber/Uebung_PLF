@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller"
+      spacing="10" alignment="CENTER" prefWidth="300" prefHeight="200">
+
+    <!-- Eingabe: Zeit in Sekunden -->
+    <TextField fx:id="secondsInput" promptText="Zeit in Sekunden eingeben" />
+
+    <!-- Label: Zeigt die verbleibende Zeit -->
+    <Label fx:id="countdownLabel" text="00:00" style="-fx-font-size: 20px;" />
+
+    <!-- Buttons: Start, Cancel, Reset -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Start" onAction="#onStart" />
+        <Button text="Cancel" onAction="#onCancel" />
+        <Button text="Reset" onAction="#onReset" />
+    </HBox>
+
+</VBox>
